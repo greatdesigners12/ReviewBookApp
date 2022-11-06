@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.reviewbookapp">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name=".androidApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ReviewBookApp">
+        <meta-data android:name="io.sentry.traces.sample-rate" android:value="1.0" />
+
+        <meta-data android:name="io.sentry.traces.activity.enable" android:value="false" />
+        <meta-data android:name="io.sentry.dsn" android:value="https://aa268032667642ffaecbdc311917e1ed@o4504106654433280.ingest.sentry.io/4504106656333824" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ReviewBookApp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
